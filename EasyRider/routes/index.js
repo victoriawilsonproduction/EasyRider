@@ -1,6 +1,5 @@
 var express = require('express');
 var router = express.Router();
-var bootstrap = require('bootstrap');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -8,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 /* CSS through Bootstrap */
-route.get('/', function(req, res, next){
+router.get('/bootstrap', function(req, res, next){
 	res.sendFile('../node_modules/bootstrap/dist/css/bootstrap.css')
 });
 
