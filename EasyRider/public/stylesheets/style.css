@@ -21,11 +21,18 @@ body {
 
 .navbar a {
 	color: #ff5757;
-	font-size: 20px;
+	font-size: 30px;
 	font-style: bold;
-    font-family: 'Major Mono Display', monospace;
+	font-family: 'Saira Stencil One', cursive;
     display: block;
 }
+
+#navbar {
+	background-color: #90de66;
+	padding: -30px;
+	
+}
+
 h1 {
 
     font-family: 'Major Mono Display', monospace;
