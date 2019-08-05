@@ -16,16 +16,12 @@ coral: #ff5757
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #d4e8f4;
+  padding-bottom: 100px;
 }
 
 #navbar {
 	background-color: #d4e8f4;
 	padding: -30px;
-
-}
-
-#navlogo {
-	align-content: center;
 }
 
 #navbarNav a {
@@ -41,21 +37,26 @@ body {
 
 
 h1 {
-	text-align: center;
+	text-align: right;
 	font-family: 'Saira Stencil One', cursive;
     color: #ff5757;
     font-size: 60px;
     display: inline-block;
     position: absolute;
+    margin: auto;
+  	width: 50%;
 }
+
 h4 {
 	padding-top: 15px; 
-	text-align: left;
+	text-align: center;
 	font-family: 'Saira Stencil One', cursive;
     color: #d4e8f4;
     font-size: 40px;
     display: inline-block;
     position: absolute;
+    margin: auto;
+  	width: 80%;
 }
 
 .jumbotron {
@@ -70,10 +71,41 @@ h4 {
 	color: #a39193;
 }
 
-#card1 {
-	display: inline-block;
+.card {
+    position: static;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #90de66;
+    background-clip: border-box;
+    border: 1px solid #2d2d2a;
 }
 
+.card-title {
+    margin-bottom: .75rem;
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 30px;
+
+}
+
+#card1 {
+	padding-left: 35px;
+	width: 30%;
+	height: 40%;
+}
+
+#card2 {
+	padding-right: 35px;
+	width: 30%;
+	height: 40%;
+}
+
+#card3 {
+	padding-top: 20px;
+}
 
 
 p {
@@ -88,23 +120,32 @@ footer {
 	width: 100%;
 	height: auto;
 }
+a {
+    color: #2d2d2a;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+  color: #2dd8a5;
+}
 
 footer ul li {
+	font-family: 'Montserrat', sans-serif;
 	display: inline-block;
 	list-style: none;
 	padding: 2%;
 	float: right;
-	color:  #ff5757;
 	text-decoration: none;
+	color:  #2d2d2a;
 }
 
-footer a {
-	text-decoration: none;
-}
 
 footer p {
 	float: left;
 	padding: 1%;
+	margin-top: 5px;
+	padding-top: 10px;
 }
 
 
