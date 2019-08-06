@@ -150,6 +150,11 @@ footer p {
 
 #rider {
 	padding-top: 15%;
-	padding-left: 15%	
+	padding-left: 15%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#rider button {
+	align-content: center;
 }
 
