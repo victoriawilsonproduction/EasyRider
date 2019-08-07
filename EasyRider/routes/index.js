@@ -16,6 +16,10 @@ router.get('/About', function(req, res, next) {
   res.render('aboutme', { title: 'About Us' });
 });
 
+// GET showtable page
+router.get('/ShowTable', function(req, res, next) {
+  res.render('showtable', { title: 'Rider List' });
+});
 
 /* CSS through Bootstrap */
 router.get('/bootstrap', function(req, res, next){

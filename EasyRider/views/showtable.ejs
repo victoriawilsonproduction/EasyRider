@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Montserrat|Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='./stylesheets/style.css'/>
+
+
+    <title><%= title %></title>
+
+  </head>
+
+  <body>
+  	<h1>Artist Hospitality Rider List</h1>
+   <!--  <% if(typeof category !== 'undefined') { %>
+      <h3><%= category %></h3>
+      <a href="/stores">View All Stores</a>
+    <% } %> -->
+    <table>
+      <thead>
+        <tr>
+          <th>Arist Name</th>
+          <th>DOS Contact</th>
+          <th>Stage</th>
+          <th>Item</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(var i = 0; i < easyrider.length; i++) { %>
+          <tr>
+            <td><%= easyrider[i].ArtistName %></td>
+            <td><%= easyrider[i].DOSContact %></td>
+            <td><%= easyrider[i].Stage %></td>
+            <td><a href="/easyrider/erDatabase/<%= erDatabase[i].erDatabase %>"><%= easyrider[i].erDatabase %></a></td>
+            <td><a href="/easyrider/<%= easyrider[i].id %>">More Info</a></td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+<!-- 
+  <h1>Our List of Stores</h1>
+    <% if(typeof category !== 'undefined') { %>
+      <h3><%= category %></h3>
+      <a href="/stores">View All Stores</a>
+    <% } %>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Enterance</th>
+          <th>Location</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(var i = 0; i < stores.length; i++) { %>
+          <tr>
+            <td><%= stores[i].store_name %></td>
+            <td><%= stores[i].mall_entrance %></td>
+            <td><%= stores[i].mall_location %></td>
+            <td><a href="/stores/category/<%= stores[i].category %>"><%= stores[i].category %></a></td>
+            <td><a href="/stores/<%= stores[i].id %>">More Info</a></td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table> -->
+
+
+
+    <div><%- partial('partials/footer') -%></div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
