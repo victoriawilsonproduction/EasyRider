@@ -18,7 +18,8 @@ router.get('/stage/:stage', function(req, res, next){
 	});
 });
 
-router.get('/:id', function(req, res, next){
+router.get('/showtable', function(req, res, next){
+	console.log('items', items);
 	erDatabase.findByPk(req.params.id).then(function(artst){
 		res.render('showtable', {artist: artist});
 	});

@@ -28,16 +28,16 @@
         </tr>
       </thead>
       <tbody>
-        <% for(var i = 0; i < easyrider.length; i++) { %>
-          <tr>
-            <td><%= easyrider[i].ArtistName %></td>
-            <td><%= easyrider[i].DOSContact %></td>
-            <td><%= easyrider[i].Stage %></td>
-            <td><a href="/easyrider/erDatabase/<%= erDatabase[i].erDatabase %>"><%= easyrider[i].erDatabase %></a></td>
-            <td><a href="/easyrider/<%= easyrider[i].id %>">More Info</a></td>
+<!--         <% for(var i = 0; i < artist.length; i++) { %>
+ -->          <tr>
+            <td><%= artist[i].ArtistName %></td>
+            <td><%= artist[i].DOSContact %></td>
+            <td><%= artist[i].Stage %></td>
+            <td><a href="/easyrider/erDatabase/<%= artist[i].erDatabase %>"><%= artist[i].erDatabase %></a></td>
+            <td><a href="/easyrider/<%= artist[i].id %>">More Info</a></td>
           </tr>
-        <% } %>
-      </tbody>
+<!--         <% } %>
+ -->      </tbody>
     </table>
 <!-- 
   <h1>Our List of Stores</h1>
