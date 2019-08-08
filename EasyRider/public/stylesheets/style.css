@@ -184,7 +184,7 @@ footer p {
     backface-visibility: hidden;
     transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
-    transition: transform .3s ease-in-out,-webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out,-webkit-transform .4s ease-in-out;
 }
  
 #carousel {
