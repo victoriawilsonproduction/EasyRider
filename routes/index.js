@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 
 // GET EasyRider page
 router.get('/EasyRider', function(req, res, next) {
-  res.render('EasyRider', { title: 'EasyRider' });
+  res.render('easyrider', { title: 'EasyRider' });
 });
 
 // GET About page
