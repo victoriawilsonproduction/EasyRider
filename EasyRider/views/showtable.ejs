@@ -14,30 +14,29 @@
 
   <body>
   	<h1>Artist Hospitality Rider List</h1>
-   <!--  <% if(typeof category !== 'undefined') { %>
-      <h3><%= category %></h3>
-      <a href="/stores">View All Stores</a>
-    <% } %> -->
     <table>
       <thead>
         <tr>
           <th>Arist Name</th>
           <th>DOS Contact</th>
+          <th>DOS Email</th>
+          <th>DOS Phone Number</th>
           <th>Stage</th>
-          <th>Item</th>
+          <th>Item Info</th>
+          <th>Extra Notes</th>
         </tr>
       </thead>
       <tbody>
-<!--         <% for(var i = 0; i < artist.length; i++) { %>
- -->          <tr>
-            <td><%= artist[i].ArtistName %></td>
+        <tr>
+            <td><%= artist[i].ArtistName %></td> 
             <td><%= artist[i].DOSContact %></td>
-            <td><%= artist[i].Stage %></td>
-            <td><a href="/easyrider/erDatabase/<%= artist[i].erDatabase %>"><%= artist[i].erDatabase %></a></td>
-            <td><a href="/easyrider/<%= artist[i].id %>">More Info</a></td>
+            <td><%= artist[i].DOSEmail %></td>
+            <td><%= artist[i].DOSPhone %></td>
+            <td><%= stage[i].StageName %></td>
+            <td><a href="#">Item Info</a></td>
+            <td><%= artist[i].ExtraNotes %></td>
           </tr>
-<!--         <% } %>
- -->      </tbody>
+      </tbody>
     </table>
 <!-- 
   <h1>Our List of Stores</h1>

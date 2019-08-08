@@ -166,3 +166,28 @@ footer p {
 	align-content: center;
 }
 
+.carousel-inner {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    align-content: center;
+    padding-left: 20%;
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .4s ease-in-out;
+    transition: transform .4s ease-in-out;
+    transition: transform .4s ease-in-out,-webkit-transform .4s ease-in-out;
+}
+ 
+#carousel {
+	background-color: #2dd8a5;
+	background-image: url('../images/background.jpg');
+}

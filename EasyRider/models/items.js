@@ -6,11 +6,13 @@ var Items = db.define('EasyRider', {
 		type: Sequelize.INTEGER,
 		primaryKey: true
 	},
-	ArtistName: Sequelize.STRING,
-	DOSConact: Sequelize.STRING,
-	DOSEmail: Sequelize.STRING,
-	Stage: Sequelize.STRING,
-	Item: Sequelize.STRING
+	ItemType: Sequelize.STRING,
+	Item: Sequelize.STRING,
+	ItemBrand: Sequelize.STRING,
+	Quanitity: Sequelize.STRING,
+	SpecialInstructions: Sequelize.STRING,
+	// ArtistID:
+	// StageID:
 });
 
 module.exports = EasyRider;
