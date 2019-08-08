@@ -1,0 +1,206 @@
+/*
+Fonts:
+font-family: 'Saira Stencil One', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Major Mono Display', monospace;
+
+Colors:
+light blue: #d4e8f4
+bright turqouise: #2dd8a5
+medium green: #90de66
+dusty navy blue: #585563
+grey black: #2d2d2a
+coral: #ff5757 
+*/
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #d4e8f4;
+  padding-bottom: 100px;
+}
+
+#navbar {
+	background-color: #d4e8f4;
+	padding: -30px;
+}
+
+#navbarNav a {
+	color: #2d2d2a;
+	font-size: 30px;
+	font-style: bold;
+	font-family: 'Saira Stencil One', cursive;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+h1 {
+	text-align: right;
+	font-family: 'Saira Stencil One', cursive;
+    color: #ff5757;
+    font-size: 60px;
+    display: inline-block;
+    position: absolute;
+    margin: auto;
+  	width: 50%;
+}
+
+h4 {
+	padding-top: 15px; 
+	text-align: center;
+	font-family: 'Saira Stencil One', cursive;
+    color: #d4e8f4;
+    font-size: 40px;
+    display: inline-block;
+    position: absolute;
+    margin: auto;
+  	width: 80%;
+}
+
+.jumbotron {
+	background-image: url(../images/heart.jpg);
+	padding: 20%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	margin-top: 10px;
+	background-attachment: fixed;
+	background-position: center 90%;
+	color: #a39193;
+}
+
+hr {
+	border: 1px solid #2d2d2a;
+}
+
+.card {
+    position: static;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #90de66;
+    background-clip: border-box;
+    border: 2px solid #2d2d2a;
+}
+
+.card: hover{
+	
+}
+
+.card-title {
+    margin-bottom: .75rem;
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 30px;
+
+}
+
+#card1 {
+	padding-left: 35px;
+	width: 30%;
+	height: 40%;
+}
+
+#card2 {
+	padding-right: 35px;
+	width: 30%;
+	height: 40%;
+}
+
+#card3 {
+	padding-top: 20px;
+}
+
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	padding: 10px;
+}
+
+footer {
+	background-color: #ff5757;
+	position: absolute;
+	width: 100%;
+	height: auto;
+}
+a {
+    color: #2d2d2a;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+  color: #2dd8a5;
+}
+
+footer ul li {
+	font-family: 'Montserrat', sans-serif;
+	display: inline-block;
+	list-style: none;
+	padding: 2%;
+	float: right;
+	text-decoration: none;
+	color:  #2d2d2a;
+}
+
+
+footer p {
+	float: left;
+	padding: 1%;
+	margin-top: 5px;
+	padding-top: 10px;
+}
+
+#rider {
+	padding-top: 15%;
+	padding-left: 15%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#rider button {
+	align-content: center;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    align-content: center;
+    padding-left: 20%;
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out,-webkit-transform .4s ease-in-out;
+}
+ 
+#carousel {
+	background-color: #2dd8a5;
+	background-image: url('../images/background.jpg');
+}
+
+
+#table {
+	padding-top: 10%; 
+	background-color: #2dd8a5;
+}
+
+#tableHeader {
+	padding-top: 15%;	
+	text-align: left;
+
+}
+

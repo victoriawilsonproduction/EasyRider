@@ -1,0 +1,22 @@
+    <%- layout('loginlayout.ejs') -%>
+
+	<div>
+		<br>
+		<h2>Please Log In</h2>
+		<% if(error) { %>
+		<%= error %>
+		<% } %>
+		<br> 
+		<form id="login" action="/login" method="post">
+			<label for="username">Email Address: </label>
+			<input name="username" required autofocus>
+			<br> <br> 
+			<label for="password">Password: </label>
+			<input name="password" type="password" required>
+			<br>
+			<button id="loginbtn" type="submit">Log In</button>
+			<br>
+		</form>
+	</div>
+
+   
