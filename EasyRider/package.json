@@ -16,6 +16,8 @@
     "http-errors": "~1.6.3",
     "jquery": "^3.4.1",
     "morgan": "~1.9.1",
-    "popper.js": "^1.14.7"
+    "popper.js": "^1.14.7",
+    "sequelize": "^5.12.3",
+    "sqlite3": "^4.0.9"
   }
 }

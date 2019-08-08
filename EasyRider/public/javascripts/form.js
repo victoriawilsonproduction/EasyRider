@@ -7,5 +7,3 @@ $('#addButton').click(function() {
 
   newDiv.find('input').val('');
 });
-
-
