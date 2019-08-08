@@ -9,15 +9,13 @@ var EasyRider = db.define('EasyRider', {
 	ArtistName: Sequelize.STRING,
 	DOSConact: Sequelize.STRING,
 	DOSEmail: Sequelize.STRING,
-	Stage: Sequelize.STRING
+	Stage: Sequelize.STRING,
+	Item: Sequelize.STRING
 });
 
 module.exports = EasyRider;
 
-
-// var Sequelize = require('sequelize');
-// var db = require('../db/connection');
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
 // var Store = db.define('store', {
 // 	id: {
 // 		type: Sequelize.INTEGER,
