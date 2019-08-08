@@ -13,60 +13,42 @@
   </head>
 
   <body>
-  	<h1>Artist Hospitality Rider List</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Arist Name</th>
-          <th>DOS Contact</th>
-          <th>DOS Email</th>
-          <th>DOS Phone Number</th>
-          <th>Stage</th>
-          <th>Item Info</th>
-          <th>Extra Notes</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-            <td><%= artist[i].ArtistName %></td> 
-            <td><%= artist[i].DOSContact %></td>
-            <td><%= artist[i].DOSEmail %></td>
-            <td><%= artist[i].DOSPhone %></td>
-            <td><%= stage[i].StageName %></td>
-            <td><a href="#">Item Info</a></td>
-            <td><%= artist[i].ExtraNotes %></td>
-          </tr>
-      </tbody>
-    </table>
-<!-- 
-  <h1>Our List of Stores</h1>
-    <% if(typeof category !== 'undefined') { %>
-      <h3><%= category %></h3>
-      <a href="/stores">View All Stores</a>
-    <% } %>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Enterance</th>
-          <th>Location</th>
-          <th>Category</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% for(var i = 0; i < stores.length; i++) { %>
+    <div><%- partial('partials/navbar') -%></div>
+
+    <div id="tableHeader">
+      <h1>Artist Rider List</h1>
+    </div>
+
+    <div id="table">
+      <table class="table table-hover">
+        <thead>
           <tr>
-            <td><%= stores[i].store_name %></td>
-            <td><%= stores[i].mall_entrance %></td>
-            <td><%= stores[i].mall_location %></td>
-            <td><a href="/stores/category/<%= stores[i].category %>"><%= stores[i].category %></a></td>
-            <td><a href="/stores/<%= stores[i].id %>">More Info</a></td>
+            <th scope="col"></th>
+            <th scope="col">Arist Name</th>
+            <th scope="col">DOS Contact</th>
+            <th scope="col">DOS Email</th>
+            <th scope="col">DOS Phone Number</th>
+            <th scope="col">Stage</th>
+            <th scope="col">Item Info</th>
+            <th scope="col">Extra Notes</th>
           </tr>
-        <% } %>
-      </tbody>
-    </table> -->
-
-
+        </thead>
+        <tbody>
+          <% for(var i = 0; i < artist.length; i++) { %>
+            <tr>
+              <th scope="row"></th>
+              <td><%= artist[i].ArtistName %></td> 
+              <td><%= artist[i].DOSContact %></td>
+              <td><%= artist[i].DOSEmail %></td>
+              <td><%= artist[i].DOSPhone %></td>
+              <td><%= artist[i].StageName %></td>
+              <td><a href="#">Item Info</a></td>
+              <td><%= artist[i].ExtraNotes %></td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </div>
 
     <div><%- partial('partials/footer') -%></div>
 

@@ -182,12 +182,25 @@ footer p {
     margin-right: -100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    transition: -webkit-transform .4s ease-in-out;
-    transition: transform .4s ease-in-out;
-    transition: transform .4s ease-in-out,-webkit-transform .4s ease-in-out;
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out,-webkit-transform .3s ease-in-out;
 }
  
 #carousel {
 	background-color: #2dd8a5;
 	background-image: url('../images/background.jpg');
 }
+
+
+#table {
+	padding-top: 10%; 
+	background-color: #2dd8a5;
+}
+
+#tableHeader {
+	padding-top: 15%;	
+	text-align: left;
+
+}
+
